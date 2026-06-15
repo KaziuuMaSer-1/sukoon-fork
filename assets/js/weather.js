@@ -79,7 +79,7 @@ function displayWeather() {
 
 	const iconClass = iconMap[weather.iconId] || 'ph-cloud';
 	iconElement.innerHTML = `<i id="weatherIcon" class="ph ${iconClass}"></i>`;
-	tempElement.innerHTML = `${weather.temperature.value.toFixed(0)}°<span class="unit">${tempUnit}</span>`;
+	tempElement.innerHTML = `${weather.temperature.value.toFixed(0)}<span class="unit">°${tempUnit}</span>`;
 	
 	const capitalizedDesc = weather.description.charAt(0).toUpperCase() + weather.description.slice(1);
 	descElement.innerText = capitalizedDesc;
