@@ -374,24 +374,21 @@ body {
   }
 }
 
-/* Typewriter Cursor Styles */
-#greetings {
+/* Typewriter Caret Styles */
+.typewriter-caret {
   display: inline-block;
-  position: relative;
-}
-
-#greetings::after {
-  content: '|';
-  display: inline-block;
-  margin-left: 4px;
+  width: 2px;
+  height: 1.1em;
+  background-color: var(--fg);
+  opacity: 0.45; /* Low-contrast, subtle look */
+  margin-left: 3px;
+  vertical-align: -0.12em; /* Centered relative to baseline */
   animation: blink 0.75s infinite alternate;
-  font-weight: normal;
-  opacity: 1;
-  transition: opacity 0.5s ease;
 }
 
-#greetings.done::after {
+.typewriter-caret.done {
   opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 @keyframes blink {
@@ -399,19 +396,3 @@ body {
   60%, 100% { opacity: 0; }
 }
 
-/* Smooth Typewriter Reveal Styles */
-.char {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(4px);
-  filter: blur(2px);
-  animation: charReveal 0.25s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-}
-
-@keyframes charReveal {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
-  }
-}

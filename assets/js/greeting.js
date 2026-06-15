@@ -1,7 +1,7 @@
 // ┌─┐┬─┐┌─┐┌─┐┌┬┐┬┌┐┌┌─┐┌─┐
 // │  ├┬┘├┤ ├┤  │ │││││ ┬└─┐
 // └─┘┴└─└─┘└─┘ ┴ ┴┘└┘└─┘└─┘
-// Function to set Greetings with an ultra-smooth GPU-accelerated reveal effect
+// Function to set Greetings with a highly polished letter-by-letter typewriter effect
 
 const today = new Date();
 const hour = today.getHours();
@@ -23,39 +23,37 @@ if (hour >= 23 || hour < 6) {
 	greetingText = gree4 + name;
 }
 
-const typeWriter = (element, text, speed = 25) => {
-	element.innerHTML = '';
-	element.classList.remove('done');
-
-	let charIndex = 0;
-	const words = text.split(' ');
+const typeWriter = (element, text, speed = 40) => {
+	// Setup text span and dynamic inline caret
+	element.innerHTML = '<span id="greeting-text"></span><span id="caret" class="typewriter-caret"></span>';
+	const textSpan = document.getElementById('greeting-text');
+	const caretSpan = document.getElementById('caret');
 	
-	const wordMarkups = words.map(word => {
-		const chars = Array.from(word);
-		const charMarkups = chars.map(char => {
-			const delay = (charIndex * speed) / 1000;
-			charIndex++;
+	let i = 0;
+	const type = () => {
+		if (i < text.length) {
+			const char = text.charAt(i);
+			textSpan.innerText += char;
+			i++;
 			
-			// Add a natural pause after punctuation marks by skipping frames in the delay
+			// Natural human speed variations (jitter)
+			let delay = speed + (Math.random() * 16 - 8);
+			
+			// Add natural pauses at punctuation marks
 			if (char === ',' || char === '!' || char === '.') {
-				charIndex += 12; // Adds ~300ms pause before next char begins
+				delay = 300;
 			}
 			
-			return `<span class="char" style="animation-delay: ${delay}s">${char}</span>`;
-		}).join('');
-		
-		charIndex++; // Delay increment for space
-		return `<span class="word" style="display: inline-block; white-space: nowrap;">${charMarkups}</span>`;
-	});
-
-	// Join words with non-breaking spaces for correct wrapping
-	element.innerHTML = wordMarkups.join('&nbsp;');
-
-	// Transition done state for blinking cursor fade out
-	const totalDuration = (charIndex * speed) + 300; // ms
-	setTimeout(() => {
-		element.classList.add('done');
-	}, totalDuration);
+			setTimeout(type, delay);
+		} else {
+			// Finished typing: keep blinking for 1.2 seconds, then fade out
+			setTimeout(() => {
+				caretSpan.classList.add('done');
+			}, 1200);
+		}
+	};
+	
+	type();
 };
 
-typeWriter(document.getElementById('greetings'), greetingText, 25);
+typeWriter(document.getElementById('greetings'), greetingText, 40);
