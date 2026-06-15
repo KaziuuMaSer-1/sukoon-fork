@@ -15,16 +15,13 @@ A minimal, premium startpage with swiss typography and calm aesthetics.
   <img src="assets/img/sukoon-dark.png" width="49%" alt="Sukoon — Dark Mode" />
 </div>
 
-<br>
+---
 
 <div align="center">
   <img src="assets/img/sukoon-demo.gif" width="100%" alt="Sukoon — Demo" />
+  <br>
+  Staggered entry animations, typewriter greeting, and smooth theme toggle.
 </div>
-
-<br>
-
-Staggered entry animations, typewriter greeting with natural keystroke jitter,
-and smooth theme toggle with icon rotation.
 
 <br>
 
