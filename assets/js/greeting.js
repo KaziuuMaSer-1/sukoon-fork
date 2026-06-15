@@ -109,8 +109,8 @@ const typeWriter = (element, base, nameVal, suffix, speed = 40) => {
 		}
 	};
 	
-	// Start typing with a slight initial delay for loading transition
-	setTimeout(type, 500);
+	// Start typing after staggered card entries are fully done
+	setTimeout(type, 1400);
 };
 
 typeWriter(document.getElementById('greetings'), baseText, name, suffixText, 45);
