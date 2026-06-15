@@ -71,7 +71,7 @@ const CONFIG = {
 		{
 			id: '4',
 			name: 'Reddit',
-			icon: 'reddit-logo',
+			icon: 'hash',
 			link: 'https://reddit.com/',
 		},
 		{
@@ -83,7 +83,7 @@ const CONFIG = {
 		{
 			id: '6',
 			name: 'Telegram',
-			icon: 'telegram-logo',
+			icon: 'paper-plane-tilt',
 			link: 'https://web.telegram.org/',
 		},
 	],
