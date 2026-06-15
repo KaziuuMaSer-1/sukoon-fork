@@ -68,7 +68,7 @@ const generateSecondListsContainer = () => {
 };
 
 const generateLists = () => {
-	switch (CONFIG.bentoLayout) {
+	switch (CONFIG.layout) {
 		case 'bento':
 			generateFirstListsContainer();
 			break;

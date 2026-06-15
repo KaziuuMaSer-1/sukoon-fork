@@ -20,7 +20,7 @@ const generateLayout = () => {
 
 	const position = 'beforeend';
 
-	switch (CONFIG.bentoLayout) {
+	switch (CONFIG.layout) {
 		case 'bento':
 			linksBlockLeft.insertAdjacentHTML(position, firstButtonsContainer);
 			linksBlockRight.insertAdjacentHTML(position, firstListsContainer);

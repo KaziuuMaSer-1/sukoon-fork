@@ -40,7 +40,7 @@ const generateSecondButtonsContainer = () => {
 };
 
 const generateButtons = () => {
-	switch (CONFIG.bentoLayout) {
+	switch (CONFIG.layout) {
 		case 'bento':
 			generateFirstButtonsContainer();
 			break;

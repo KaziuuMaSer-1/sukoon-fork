@@ -1,9 +1,7 @@
-// ╔╗ ╔═╗╔╗╔╔╦╗╔═╗
-// ╠╩╗║╣ ║║║ ║ ║ ║
-// ╚═╝╚═╝╝╚╝ ╩ ╚═╝
-// ┌─┐┌─┐┌┐┌┌─┐┬┌─┐┬ ┬┬─┐┌─┐┌┬┐┬┌─┐┌┐┌
-// │  │ ││││├┤ ││ ┬│ │├┬┘├─┤ │ ││ ││││
-// └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
+// ┌─┐┌─┐┌┐┐┌─┐┌─┐┌─┐
+// └─┐│ │││││ ┬├┤ └─┐
+// └─┘└─┘┘└┘└─┘└─┘└─┘
+// A minimal, premium startpage
 
 const CONFIG = {
 	// ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
@@ -23,10 +21,10 @@ const CONFIG = {
 	greetingNight: 'Good night, sleep well.',
 
 	// Layout
-	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
+	layout: 'bento', // 'bento', 'lists', 'buttons'
 
 	// Weather
-	weatherKey: '80b35a5fc2e578fc25cba7c41500c4b9', // Write here your API Key
+	weatherKey: '', // Write here your API Key
 	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
 	weatherUnit: 'C', // 'F', 'C'
 	language: 'en', // More languages in https://openweathermap.org/current#multi
