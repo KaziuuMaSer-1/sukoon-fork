@@ -58,7 +58,7 @@ const CONFIG = {
         {
             id: '2',
             name: 'ListenBrainz',
-            icon: 'music-notes',
+            icon: 'headset',
             link: 'https://listenbrainz.org/user/KaziuuMaSos/',
         },
         {
@@ -76,7 +76,7 @@ const CONFIG = {
         {
             id: '5',
             name: 'FMHY',
-            icon: 'gamepad',
+            icon: 'cassette-tape',
             link: 'https://fmhy.net/',
         },
         {
@@ -97,7 +97,7 @@ const CONFIG = {
         {
             id: '2',
             name: 'Lucide Icons',
-            icon: 'sparkles',
+            icon: 'tornado',
             link: 'https://lucide.dev/icons/',
         },
         {
@@ -114,9 +114,9 @@ const CONFIG = {
         },
         {
             id: '5',
-            name: 'Spotify',
-            icon: 'spotify-logo',
-            link: 'https://open.spotify.com/',
+            name: 'SteamRip',
+            icon: 'steam-logo',
+            link: 'https://steamrip.com/',
         },
         {
             id: '6',
