@@ -69,9 +69,9 @@ const CONFIG = {
         },
         {
             id: '4',
-            name: 'MZK Jastrzębie',
-            icon: 'train',
-            link: 'https://mzkjastrzebie.pl/',
+            name: 'Claude',
+            icon: 'asterisk-simple',
+            link: 'https://claude.ai',
         },
         {
             id: '5',
@@ -120,9 +120,9 @@ const CONFIG = {
         },
         {
             id: '6',
-            name: 'Telegram',
-            icon: 'paper-plane-tilt',
-            link: 'https://web.telegram.org/',
+            name: 'Gemini',
+            icon: 'star-four',
+            link: 'https://gemini.google.com/app/',
         },
     ],
 
