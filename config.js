@@ -10,10 +10,10 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'YourName',
+	name: 'Oliwier',
 	imageBackground: false,
 	openInNewTab: true,
-	twelveHourFormat: true,
+	twelveHourFormat: false,
 
 	// Greetings
 	greetingMorning: 'Good morning,',
@@ -22,7 +22,7 @@ const CONFIG = {
 	greetingNight: 'Good night, sleep well.',
 
 	// Layout
-	layout: 'bento', // 'bento', 'lists', 'buttons'
+	layout: 'buttons', // 'bento', 'lists', 'buttons'
 
 	// Weather
 	weatherKey: '', // Get your API key from https://openweathermap.org/
