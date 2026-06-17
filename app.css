@@ -20,11 +20,13 @@
   --fg: #3a3a3a; /* Foreground color */
   --sfg: #494949; /* Sceondary Foreground color */
 
-  /* Light Colors  */
-  --accent: #537060; /* Premium visible desaturated Forest Sage green */
-  --background: #f5f5f5; /* Background color */
-  --cards: #e4e6e6; /* Cards color */
+  /* Matugen i think  */
+  --background: {image.dark.background};
+  --foreground: {image.dark.foreground};
+  --primary: {image.dark.primary};
+  --accent: {image.dark.accent};
 
+/* ... reszta Twojego oryginalnego, ogromnego kodu CSS zostaje nienaruszona poniżej ... */
   /* Image background  */
   --imgbg: url(assets/background.jpg); /* Image URL */
   --imgcol: linear-gradient(
